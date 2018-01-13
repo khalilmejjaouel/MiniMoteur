@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>index</title>
+  <link "index.component.css" rel="stylesheet" type="text/css" href=>
+</head>
+
+<body id=acceuil>
+
+
+  <form>
+    <input type="text" #entry> 
+  </form>
+  <button (click)="btnRecherche(entry.value)" >recherche</button>
+  <h1>Posts</h1>
+  <div *ngFor="let post of posts">
+    <ul>
+      <li>
+        <img src="" />
+        <h3>brand :{{post.brand}}</h3>
+        <p> energy :{{post.energy}}</p>
+        <p> model : {{post.model}}</p>
+        <p>region :{{post.region}} </p>
+      </li>
+    </ul>
+  </div>
+
+
+</body>
+
+</html>
